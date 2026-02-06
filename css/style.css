@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap');
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+body {
+    background-color: black;
+}
+
+.header__image {
+    background-image: url(../img/фон.jpg);
+    background-position: center bottom;
+    height: 1000px;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.logo__img img {
+    width: 200px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.logo__text {
+    margin-top: 45px;
+    border-left: 1px solid white;
+    font-family: "Jost", sans-serif;
+    height: 50px;
+}
+
+.logo__text a {
+    text-decoration: none;
+    color: white;
+    margin: 0px;
+
+
+}
+
+.header-logo {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+@media screen and (max-width:1150px) {
+    .header__wrapper {
+        padding-top: 30px;
+        justify-content: center;
+    }
+
+    ul {
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 25px;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+
+}
+
+nav a:hover {
+    border-bottom: 1px white solid;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-description {
+    margin: 130px 60px auto 600px;
+}
+
+.header-main {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-main__text {
+    max-width: 600px;
+}
+
+.header-description__title {
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    font-size: 55px;
+    color: #FF7F50;
+}
+
+.header-description__text {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    color: white;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-buttons button {
+    border: 1px white solid;
+    padding: 30px;
+    border-radius: 60px;
+    color: white;
+    font-size: 17px;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 300;
+    margin-left: 15px;
+    margin-top: 60px;
+}
+
+.header-buttons button:hover {
+    color: #bf5c10;
+    background-color: white;
+    border: 1px #bf5c10 solid;
+    font-weight: 500;
+}
+
+.header-button__one button {
+    background-color: #bf5c10;
+}
+
+.header-button__two button {
+    background-color: #ff7f5000;
+    margin-right: 30px;
+}
+
+.section-price__text {
+    color: white;
+    font-size: 35px;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 500;
+}
+
+.pr-img img {
+    width: 240px;
+    border-radius: 200px;
+    margin: 20px;
+}
+
+.pr-img {
+    color: white;
+    font-family: "Unbounded", sans-serif;
+    font-size: 20px;
+    width: 280px;
+    height: 630px;
+    border-radius: 50px;
+    background-color: #b2b2b229;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    animation-name: pr-img;
+}
+
+
+
+.pr-img:hover {
+    transform: scale(1.02);
+    background-color: #b2b2b259;
+
+
+}
+
+@keyframes pr-img {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(2);
+    }
+}
+
+
+
+.main-prise__background {
+    background-color: black;
+}
+.prise__imges {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.pr-cost__text {
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.pr-cost__text-small {
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.cost {
+    font-size: 16px;
+}
+
+.prise-photo-name {
+    font-family: "Jost", sans-serif;
+    font-size: 37px;
+    width: 800;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.pr-buy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pr-buy a {
+    text-decoration: none;
+}
+
+.pr-buy button {
+    border: 1px white solid;
+    padding: 15px 55px;
+    border-radius: 60px;
+    color: white;
+    font-size: 20px;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 300;
+    background-color: #000000b2;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.pr-buy button:hover {
+    color: #000000;
+    font-weight: 400;
+    background-color: rgba(255, 255, 255, 0.493);
+    border: 1px #000000b7 solid;
+}
+
+
+.section-about-me__text {
+    color: white;
+    font-size: 20px;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 200;
+    margin-left: 20px;
+}
+.section-about-me__image img{
+    width:600px;
+}
+
+.section-about-me__text a {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 400;
+    color: #ef8c41;
+}
+.section-about-me__text-image{
+    display: flex;
+    justify-content: end center;
+    align-items: center;
+}
+
+@media (max-width:1150px) {
+
+    /*
+    .section-about-me__text {
+        margin-top: 60px;
+        min-width: 200px;
+        font-size: 16px;
+        line-height: 26px;
+        background-color: red;
+    }*/
+    .section-about-me__text {
+        color: white;
+        font-size: 18px;
+        font-family: "Unbounded", sans-serif;
+        font-weight: 200;
+        margin: 10px 200px;
+    }
+
+}
+@media (max-width:560px){
+    .section-about-me__text{
+        margin: 10px 60px;
+        font-size: 15px;
+    }
+}
+@media (max-width:1150px) {
+    .section-about-me__text-image{
+        flex-direction: column;
+    }
+}
+
+
+.section-about-me {
+    font-family: "Jost", sans-serif;
+    color: white;
+    font-size: 55px;
+    text-align: center;
+}
+
+/*.main__image {
+    background-image: url(../img/фон_главная_main.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 1000px;
+}*/
+
+.section-portfolio__text {
+    font-family: "Jost", sans-serif;
+    color: white;
+    font-size: 55px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.section-portfolio__images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.port-img img {
+    width: 400px;
+    border-radius: 20px;
+}
+
+.port-img a {
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    align-items: flex-end;
+}
+
+.port-img {
+    height: 450px;
+    color: white;
+    color: white;
+    font-size: 27px;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 300;
+    margin-bottom: 100px;
+    margin-right: 30px;
+}
+
+.tel {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.section-photo-session-images {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.section-photo-session-images img {
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.section-link-to-application {
+    margin: 30px auto;
+    color: white;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    display: flex;
+}
+
+.section-photo-session-title {
+    color: white;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 300;
+    font-size: 35px;
+    text-align: center;
+}
+
+footer {
+    background-color: white;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.footer-tel {
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.footer-social-networks {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-protection {
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    margin-left: 30px;
+}
+
+.footer-communication {
+    text-align: right;
+}
+
+footer img {
+    width: 80px;
+}
+
+.section-link-to-application a {
+    color: rgb(213, 153, 14);
+    font-family: "Unbounded", sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+form {
+    color: white;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    max-width: 750px;
+    margin: auto;
+}
+
+input {
+    font-size: 25px;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    border-radius: 20px;
+}
+
+select {
+    font-size: 25px;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+}
+
+.form-submit {
+    border-radius: 30px;
+    background-color: #bf5c10;
+    color: white;
+    font-weight: 400;
+    padding: 15px;
+    text-align: center;
+}
+
+.form-name {
+    width: 600px;
+}
+
+.form-surname {
+    width: 540px;
+}
+
+.form-email {
+    width: 590px;
+}
+
+.form-phone {
+    width: 560px;
+}
+
+.form-textarea {
+    border-radius: 20px;
+}
+
+.form-title {
+    font-size: 35px;
+    font-weight: 500;
+    color: #ef8c41;
+    text-align: center;
+}
+
+.form-submit {
+    text-align: center;
+    text-wrap: wrap;
+}
+
+.form_send {
+    text-align: center;
+}
+
+
+
+
+
+.wrapper {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+:root {
+    --option-height: 400px;
+    --option-width: 60px;
+    --radius: 1.875rem;
+    --gutter: 10px;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    min-width: 480px;
+    max-width: calc (var(--total-options) * 130px);
+    height: var(--option-height);
+    width: 100%;
+}
+
+.option {
+    margin: var(--gutter);
+    flex-grow: 1;
+    border-radius: var(--radius);
+    flex: 0 0 var(--option-width);
+    transition: flex-grow 1.25s cubic-bezier(.17, .84, .44, 1);
+    background-position: center;
+    background-size: cover;
+}
+
+.option:not(.active) {
+    cursor: pointer;
+}
+
+.option.active {
+    flex-grow: var(--total-options);
+}
+
+@media (max-width: 768px) {
+    .options {
+        flex-direction: column;
+        min-height: 100vh;
+        min-width: auto;
+    }
+}
+
+
+
+
+
+
+
+.section-prise__title {
+    color: white;
+    font-family: "Unbounded", sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+}
+.section-prise__title-text{
+     color: white;
+     font-size: 25px;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.photo-session__button{
+    text-align: center;
+}
+.photo-session__button button{
+    color: white;
+    font-family: "Unbounded", sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    background-color: #022478;
+    
+    border-radius: 45px;
+    padding: 15px 40px;
+    margin: 20px 30px;
+}
+.photo-session__button button:hover{
+     color: #3870ff;
+     font-weight: 400;
+     background-color: white;
+}
